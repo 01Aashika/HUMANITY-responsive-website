@@ -1,0 +1,511 @@
+*{
+    padding:0;
+    margin:0;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(222, 184, 135, 0.8) !important; 
+    z-index: 10;
+    backdrop-filter: blur(2px); 
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color:white;
+    font-size:21px;
+    font-weight: bold;
+
+}
+
+.navbar .nav-link:hover {
+    color: #f7c32e;
+}
+ .navbar-nav {
+      margin-left: 1rem;
+    }
+.navbar-toggler {
+      border-color: rgba(255,255,255,0.5);
+      background-color: rgba(255,255,255,0.1);
+      border:none;
+      outline: none;
+      position: absolute;
+  left: 15px;         
+  top: 15px;
+  z-index: 1051;       
+  box-shadow: none;
+
+    }
+    #navbarSupportedContent a {
+      border-bottom: 2px solid transparent;
+    }
+
+    #navbarSupportedContent a:hover {
+      border-bottom: 2px solid white;
+    }
+    .close-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px; 
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  z-index: 2001;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  #menuToggle {
+    display: none !important;
+  }
+}
+
+
+.nav-donate-btn {
+  background-color: white;
+  color: #ffc107;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.nav-donate-btn:hover {
+  background-color: #fff8e1;
+}
+
+.home-section {
+    background: url('charity.jpeg') center center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.home-content {
+    text-align: left;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+
+}
+
+.home-content h2 {
+    font-size: 32px;
+    margin-top: 10px;
+      font-family: 'Times New Roman', Times, serif;
+
+}
+
+.btn-yellow {
+    background-color: #f7c32e;
+    color: white;
+    font-weight: bold;
+    border: none;
+      font-family: 'Times New Roman', Times, serif;
+
+}
+
+.btn-yellow:hover {
+    background-color: #e5b722;
+    color: white;
+      font-family: 'Times New Roman', Times, serif;
+
+}
+.core-sector-title {
+  color: blue;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  padding-top:40px;
+}
+.core-sector-subtitle{
+    color:black;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+}
+.feature-box {
+  background-color: #fff;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #f7c32e;
+}
+
+/* About Section */
+.about-section{
+  margin:0;
+  margin-top:90px;
+  background-color: lightgoldenrodyellow;
+  display:flex;
+  
+}
+.about-section img {
+    width: 70%;
+}
+
+.torn-edge {
+  position: relative;
+  background-color: lightgoldenrodyellow;
+  padding: 2rem;
+}
+
+.torn-edge::before,
+.torn-edge::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  left: 0;
+  background-color: lightgoldenrodyellow;
+  -webkit-clip-path: polygon(
+    1% 0%, 4% 100%, 9% 0%, 13% 100%, 19% 1%, 21% 100%, 26% 5%, 30% 100%,
+    36% 2%, 43% 100%, 50% 1%, 52% 100%, 61% 0%, 69% 94%, 70% 0%, 76% 100%,
+    81% 0%, 84% 100%, 91% 0%, 97% 100%, 99% 3%
+  );
+  
+  z-index: 2;
+}
+
+.torn-edge::before {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.torn-edge::after {
+  bottom: 0;
+}
+
+
+.highlight-title {
+  font-weight: bold;
+  color: #2c3e50;
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.highlight-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 12px;
+  background-color: #ffc107;
+  z-index: -1;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.btn-yellow {
+  background-color: #ffc107;
+  color: white;
+  font-weight: 500;
+  padding: 10px 24px;
+  border: none;
+  text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.btn-yellow:hover {
+  background-color: #e0a800;
+  color: white;
+}
+/*cause-section*/
+.causes-section {
+  margin-top:100px;
+  background-color: #ffffff;
+}
+
+.cause-card {
+  border: 1px solid #eee;
+  transition: transform 0.3s;
+}
+
+.cause-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Stats Section */
+.stats-section {
+  background-color: #f1f1f1;
+  margin-top: -2px;
+  position: relative; 
+  overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#mission {
+  margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+#mission ul li {
+  font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#mission .btn-warning:hover {
+  background-color: #e6b31f;
+  color: white;
+}
+.btn-warning {
+  color: white !important;
+}
+/* Volunteers Section  */
+.volunteer-section {
+  background-color:white;
+  padding: 60px 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.volunteer-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.volunteer-img {
+  height: 280px;
+  object-fit: cover;
+}
+
+.volunteer-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.volunteer-role {
+  color: #ffc107;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.donate-bg {
+  background: url('sobba.png') no-repeat center center/cover;
+  padding: 60px 20px;
+  position: relative;
+  z-index: 1;
+  
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+
+  
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5; 
+  z-index: 1;
+}
+
+.donate-content {
+  position: relative;
+  z-index: 2;
+}
+
+#contact h2,
+#contact p,
+#contact a.btn {
+  font-weight: bold !important;
+}
+.testimonial-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #f8f9fa;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+/* Donate Modal */
+.donate-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.donate-modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.donate-modal-content h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.donate-modal-content input,
+.donate-modal-content button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.donate-modal-content button {
+  background: #ffc107;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.donate-modal-content button:hover {
+  background: #e0a800;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* Custom Modal */
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content-box {
+  background: #fff;
+  color: #333;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.6s ease;
+}
+.modal-content-box input,
+.modal-content-box textarea,
+.modal-content-box button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.modal-content-box button {
+  background: #ffc107;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-content-box button:hover { background: #e0a800; }
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.btn {
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s ease;
+}
+nav a:hover {
+  color: #ffc107;
+}
+nav a:hover::after {
+  width: 100%;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+img {
+  transition: transform 0.4s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+html {
+  scroll-behavior: smooth;
+}
+
